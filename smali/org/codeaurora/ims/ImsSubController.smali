@@ -998,13 +998,6 @@
     .line 510
     if-nez p1, :cond_2
 
-    .line 512
-    invoke-static {}, Landroid/telephony/TelephonyBaseUtilsStub;->isMiuiRom()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
     .line 513
     iget-object v1, p0, Lorg/codeaurora/ims/ImsSubController;->mHandler:Landroid/os/Handler;
 
@@ -2105,13 +2098,6 @@
 
     .line 551
     if-eqz v2, :cond_6
-
-    .line 553
-    invoke-static {}, Landroid/telephony/TelephonyBaseUtilsStub;->isMiuiRom()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_6
 
     .line 554
     iget-object v1, p0, Lorg/codeaurora/ims/ImsSubController;->mHandler:Landroid/os/Handler;
